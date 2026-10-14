@@ -1,0 +1,36 @@
+# Zeitzone für die Restart-Zeiten
+timezone: "Europe/Berlin"
+
+# Tägliche Restart-Zeiten (HH:mm, 24h)
+restart-times:
+  - "04:00"
+  - "16:00"
+
+# Countdown-Dauer in Sekunden bei automatischem Restart
+countdown-seconds: 300
+
+# Bei welchen verbleibenden Sekunden soll gewarnt werden?
+warnings: [300, 240, 180, 120, 60, 30, 10, 5, 4, 3, 2, 1]
+
+# "shutdown" = Server fährt herunter (Start-Skript mit Schleife startet neu)
+# "spigot"   = Spigot-Restart (benötigt restart-script in spigot.yml)
+restart-method: "shutdown"
+
+messages:
+  prefix: "<gradient:#ff5555:#ffaa00><bold>Restart</bold></gradient> <dark_gray>»</dark_gray> "
+  countdown: "<yellow>Der Server startet in <red><time></red> neu!"
+  title: "<red><bold><time>"
+  subtitle: "<yellow>Server-Restart"
+  kick: "<red>Der Server wird neu gestartet.\n<gray>Bitte verbinde dich in Kürze wieder!"
+  cancelled: "<green>Der Server-Restart wurde abgebrochen."
+  started: "<yellow>Ein Restart wurde gestartet."
+  no-countdown: "<gray>Es läuft aktuell kein Restart-Countdown."
+  status-running: "<yellow>Restart in <red><time></red>."
+  status-next: "<gray>Nächster geplanter Restart: <white><next></white> Uhr."
+  reloaded: "<green>Config neu geladen."
+  invalid-number: "<red>Ungültige Zahl. Nutze: /restart <sekunden>"
+  no-permission: "<red>Dafür hast du keine Rechte."
+  unit-second: "Sekunde"
+  unit-seconds: "Sekunden"
+  unit-minute: "Minute"
+  unit-minutes: "Minuten"

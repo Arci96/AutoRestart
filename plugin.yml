@@ -1,0 +1,14 @@
+name: AutoRestart
+version: 1.0.0
+main: de.autorestart.AutoRestart
+api-version: '1.21'
+description: Automatische und manuelle Server-Restarts mit Countdown
+commands:
+  restart:
+    description: Server-Restart steuern
+    usage: /restart [sekunden|cancel|status|reload]
+    permission: autorestart.admin
+permissions:
+  autorestart.admin:
+    description: Erlaubt die Nutzung von /restart
+    default: op
